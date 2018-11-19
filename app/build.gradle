@@ -104,6 +104,9 @@ dependencies {
     implementation 'com.android.support.constraint:constraint-layout:1.1.2'
     implementation 'com.github.florent37:fiftyshadesof:1.0.0'
     implementation 'me.jfenn:attribouter:0.0.5'
+
+
+    implementation 'org.jsoup:jsoup:1.10.3'
 }
 
 repositories {

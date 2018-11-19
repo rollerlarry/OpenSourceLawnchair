@@ -79,6 +79,28 @@ public abstract class SystemShortcut {
         }
     }
 
+    public static class UpdateApp extends SystemShortcut {
+        public UpdateApp() {
+            super(R.drawable.reload, R.string.update_app_target_label);
+        }
+
+        @Override
+        public OnClickListener getOnClickListener(final Launcher launcher, final ItemInfo itemInfo) {
+            if (launcher.isEditingDisabled())
+                return null;
+            return new OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    AbstractFloatingView.closeAllOpenViews(launcher);
+                    launcher.openDialog(new ch.deletescape.lawnchair.UpdateAppFromStore(launcher, (EditableItemInfo) itemInfo, launcher));
+                }
+            };
+        }
+    }
+
+
+
+
     public abstract OnClickListener getOnClickListener(Launcher launcher, ItemInfo itemInfo);
 
     public SystemShortcut(int i, int i2) {

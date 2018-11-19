@@ -256,6 +256,9 @@
     <string name="shortcuts_menu_description"><xliff:g example="3" id="number_of_shortcuts">%1$d</xliff:g> shortcuts for <xliff:g example="Messenger" id="app_name">%2$s</xliff:g></string>
     <string name="edit_drop_target_label">Edit</string>
 
+    <string name="update_app_target_label">App Update</string>
+
+
     <!-- Button label on Wallpaper picker screen; user selects this button to set a specific wallpaper -->
     <string name="wallpaper_instructions">Set wallpaper</string>
     <!-- Error message when an image is selected as a wallpaper,
@@ -397,11 +400,18 @@
     <string name="theme_black">Black</string>
     <string name="hide_hotseat_pref_title">Hide dock</string>
     <string name="all_icons">All icons</string>
+
     <string name="pull_down_action_pref_title">Pull down action</string>
     <string name="pull_down_do_nothing">Do nothing</string>
     <string name="pull_down_notis">Show notifications</string>
     <string name="pull_down_search">Open search</string>
     <string name="pull_down_apps_search">Apps search</string>
+    //Hao
+    <string name="anim_title">Change animation</string>
+    <string name="anim_one">Animation One</string>
+    <string name="anim_two">Animation Two</string>
+    <string name="anim_three">Animation Three</string>
+
     <string name="enable_screen_rotation">Screen rotation</string>
     <string name="use_system_fonts_title">Use system fonts for labels</string>
     <string name="auto_add_shortcuts_label">Add icon to Home screen</string>
@@ -582,4 +592,6 @@
     <string name="dt2s_root">Using root</string>
     <string name="dt2s_admin_hint">To be able to use double tap to lock, you have to enable device admin for Lawnchair. This is a secure lock, meaning you have to enter your PIN on the next unlock, if you have any.</string>
     <string name="dt2s_admin_warning">By disabling device admin, you will not be able to use double tap to lock on your home screen.</string>
+
+
 </resources>

@@ -9,4 +9,10 @@
     <item
         android:id="@+id/action_reset"
         android:title="@string/list_app_reset" />
+    <item
+        android:id="@+id/action_change_password"
+        android:title="Change Password" />
+    <item
+        android:id="@+id/action_delete_password"
+        android:title="Delete Password" />
 </menu>

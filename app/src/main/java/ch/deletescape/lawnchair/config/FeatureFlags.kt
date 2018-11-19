@@ -28,7 +28,7 @@ import ch.deletescape.lawnchair.preferences.PreferenceProvider
  * Defines a set of flags used to control various launcher behaviors
  */
 object FeatureFlags {
-
+    var PASSWORD_HIDDEN_APP = ""
     const val KEY_PREF_LIGHT_STATUS_BAR = "pref_forceLightStatusBar"
     const val KEY_PREF_PINCH_TO_OVERVIEW = "pref_pinchToOverview"
     const val KEY_PREF_PULLDOWN_NOTIS = "pref_pulldownNotis"

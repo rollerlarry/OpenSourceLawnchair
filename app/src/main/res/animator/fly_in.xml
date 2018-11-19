@@ -8,7 +8,7 @@
         android:duration="@integer/fadeinAnimTime" />
     <objectAnimator
         android:interpolator="@android:interpolator/decelerate_cubic"
-        android:valueFrom="50"
+        android:valueFrom="100"
         android:valueTo="0"
         android:propertyName="translationY"
         android:duration="@integer/fadeinAnimTime" />
