@@ -118,7 +118,7 @@ object FeatureFlags {
         return LayoutInflater.from(ContextThemeWrapper(context, SETTINGS_THEMES[currentTheme]))
     }
 
-    private val LAUNCHER_THEMES = intArrayOf(R.style.LauncherTheme, R.style.LauncherTheme_Dark, R.style.LauncherTheme_Black)
-    private val SETTINGS_THEMES = intArrayOf(R.style.SettingsTheme, R.style.SettingsTheme_Dark, R.style.SettingsTheme_Black)
-    private val SETTINGS_HOME_THEMES = intArrayOf(R.style.SettingsHome, R.style.SettingsHome_Dark, R.style.SettingsHome_Black)
+    private val LAUNCHER_THEMES = intArrayOf(R.style.LauncherTheme, R.style.LauncherTheme_Dark, R.style.LauncherTheme_Black, R.style.LauncherTheme_Violet)
+    private val SETTINGS_THEMES = intArrayOf(R.style.SettingsTheme, R.style.SettingsTheme_Dark, R.style.SettingsTheme_Black, R.style.SettingsTheme_Violet)
+    private val SETTINGS_HOME_THEMES = intArrayOf(R.style.SettingsHome, R.style.SettingsHome_Dark, R.style.SettingsHome_Black, R.style.SettingsHome_Violet)
 }

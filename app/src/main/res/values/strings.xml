@@ -398,6 +398,7 @@
     <string name="theme_light">Light</string>
     <string name="theme_dark">Dark</string>
     <string name="theme_black">Black</string>
+    <string name="theme_violet">Violet</string>
     <string name="hide_hotseat_pref_title">Hide dock</string>
     <string name="all_icons">All icons</string>
 

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/OpenSourceLawnchair.iml" filepath="$PROJECT_DIR$/OpenSourceLawnchair.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lawnchair.iml" filepath="$PROJECT_DIR$/Lawnchair.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/launcherclient/launcherclient.iml" filepath="$PROJECT_DIR$/launcherclient/launcherclient.iml" />
       <module fileurl="file://$PROJECT_DIR$/lawnfeed/lawnfeed.iml" filepath="$PROJECT_DIR$/lawnfeed/lawnfeed.iml" />
