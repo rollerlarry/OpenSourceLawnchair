@@ -80,11 +80,12 @@
             android:key="prefCat_dockMisc"
             android:title="@string/pref_category_misc">
             
+
             <SwitchPreference
                 android:key="pref_hotseatShouldUseExtractedColors"
-                android:title="@string/hotseat_uses_extracted_colors_pref_title"
-                android:summaryOn="@string/hotseat_uses_extracted_colors_pref_on"
-                android:summaryOff="@string/hotseat_uses_extracted_colors_pref_off"
+                android:title="Dock uses dark theme/ light theme"
+                android:summaryOn="The dock will uses dark theme"
+                android:summaryOff="The dock will uses light theme"
                 android:defaultValue="true"
                 android:persistent="true" />
 
@@ -100,6 +101,12 @@
                 android:defaultValue="false"
                 android:dependency="pref_isHotseatTransparent"
                 android:persistent="true" />
-            
+            <SwitchPreference
+                android:key="pref_hotseatShouldUseExtractedColors"
+                android:title="@string/hotseat_uses_extracted_colors_pref_title"
+                android:summaryOn="@string/hotseat_uses_extracted_colors_pref_on"
+                android:summaryOff="@string/hotseat_uses_extracted_colors_pref_off"
+                android:defaultValue="true"
+                android:persistent="true" />
         </android.support.v7.preference.PreferenceCategory>
 </android.support.v7.preference.PreferenceScreen>

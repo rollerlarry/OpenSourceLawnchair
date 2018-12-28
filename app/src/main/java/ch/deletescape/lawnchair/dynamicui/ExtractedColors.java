@@ -182,30 +182,31 @@ public class ExtractedColors {
         if (Utilities.getPrefs(context).getTransparentHotseat()) {
             return Color.TRANSPARENT;
         }
-        int hotseatColor;
-        boolean shouldUseExtractedColors = Utilities.getPrefs(context).getHotseatShouldUseExtractedColors();
-        if (getColor(IS_SUPER_LIGHT, 0) == 1) {
-            if (shouldUseExtractedColors) {
-                int baseColor = getColor(HOTSEAT_DARK_MUTED_INDEX, getColor(HOTSEAT_DARK_VIBRANT_INDEX, Color.BLACK));
-                hotseatColor = ColorUtils.setAlphaComponent(baseColor, (int) (0.20f * 255));
-            } else {
-                hotseatColor = ColorUtils.setAlphaComponent(Color.BLACK, (int) (0.12f * 255));
-            }
-        } else if (getColor(IS_SUPER_DARK, 0) == 1) {
-            if (shouldUseExtractedColors) {
-                int baseColor = getColor(HOTSEAT_LIGHT_MUTED_INDEX, getColor(HOTSEAT_LIGHT_VIBRANT_INDEX, Color.WHITE));
-                hotseatColor = ColorUtils.setAlphaComponent(baseColor, (int) (0.25f * 255));
-            } else {
-                hotseatColor = ColorUtils.setAlphaComponent(FeatureFlags.INSTANCE.useDarkTheme(FeatureFlags.DARK_ALLAPPS) ? Color.BLACK : Color.WHITE, (int) (0.18f * 255));
-            }
-        } else {
-            if (shouldUseExtractedColors) {
-                int baseColor = getColor(HOTSEAT_LIGHT_VIBRANT_INDEX, getColor(HOTSEAT_LIGHT_MUTED_INDEX, Color.WHITE));
-                hotseatColor = ColorUtils.setAlphaComponent(baseColor, (int) (0.40f * 255));
-            } else {
-                hotseatColor = ColorUtils.setAlphaComponent(FeatureFlags.INSTANCE.useDarkTheme(FeatureFlags.DARK_ALLAPPS) ? Color.BLACK : Color.WHITE, (int) (0.25f * 255));
-            }
-        }
+        int baseColor = getColor(HOTSEAT_DARK_MUTED_INDEX, getColor(HOTSEAT_DARK_VIBRANT_INDEX, Color.MAGENTA));
+        int hotseatColor = ColorUtils.setAlphaComponent(baseColor, (int) (0.25f * 255));
+//        boolean shouldUseExtractedColors = Utilities.getPrefs(context).getHotseatShouldUseExtractedColors();
+//        if (getColor(IS_SUPER_LIGHT, 0) == 1) {
+//            if (shouldUseExtractedColors) {
+//                int baseColor = getColor(HOTSEAT_DARK_MUTED_INDEX, getColor(HOTSEAT_DARK_VIBRANT_INDEX, Color.BLACK));
+//                hotseatColor = ColorUtils.setAlphaComponent(baseColor, (int) (0.20f * 255));
+//            } else {
+//                hotseatColor = ColorUtils.setAlphaComponent(Color.BLACK, (int) (0.12f * 255));
+//            }
+//        } else if (getColor(IS_SUPER_DARK, 0) == 1) {
+//            if (shouldUseExtractedColors) {
+//                int baseColor = getColor(HOTSEAT_LIGHT_MUTED_INDEX, getColor(HOTSEAT_LIGHT_VIBRANT_INDEX, Color.WHITE));
+//                hotseatColor = ColorUtils.setAlphaComponent(baseColor, (int) (0.25f * 255));
+//            } else {
+//                hotseatColor = ColorUtils.setAlphaComponent(FeatureFlags.INSTANCE.useDarkTheme(FeatureFlags.DARK_ALLAPPS) ? Color.BLACK : Color.WHITE, (int) (0.18f * 255));
+//            }
+//        } else {
+//            if (shouldUseExtractedColors) {
+//                int baseColor = getColor(HOTSEAT_LIGHT_VIBRANT_INDEX, getColor(HOTSEAT_LIGHT_MUTED_INDEX, Color.WHITE));
+//                hotseatColor = ColorUtils.setAlphaComponent(baseColor, (int) (0.40f * 255));
+//            } else {
+//                hotseatColor = ColorUtils.setAlphaComponent(FeatureFlags.INSTANCE.useDarkTheme(FeatureFlags.DARK_ALLAPPS) ? Color.BLACK : Color.WHITE, (int) (0.25f * 255));
+//            }
+//        }
         boolean useCustomOpacity = Utilities.getPrefs(context).getHotseatShouldUseCustomOpacity();
         if (useCustomOpacity) {
             float customOpacity = Utilities.getPrefs(context).getHotseatCustomOpacity();
